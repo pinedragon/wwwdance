@@ -1,5 +1,4 @@
 import { FC } from "react";
-import ArrowRight from "../../../assets/ArrowRight.png";
 import styles from "./styles.module.scss";
 
 interface ArrowTitleHolderProp {
@@ -10,8 +9,8 @@ const ArrowTitleHolder: FC<ArrowTitleHolderProp> = ({ title }) => {
   return (
     <div className={styles.upcomingEvent}>
       <div className={styles.arrowHolder}>
-        <img src={ArrowRight} alt="arrow" />
-        <img src={ArrowRight} alt="arrow" />
+        <img src="/wwwdance/assets/ArrowRight.png" alt="arrow" />
+        <img src="/wwwdance/assets/ArrowRight.png" alt="arrow" />
       </div>
       <span>
         <p> {title} </p>

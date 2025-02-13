@@ -24,7 +24,7 @@ const EventByMonth: FC<EventByMonthProps> = ({ month, events }) => {
           )}
           {events.map((item, index) => (
             <div key={item} className={styles.eventImg}>
-              <img src={item} alt={"Competition " + (index + 1)} />
+              <img src={item} alt={"Competition " + index} />
               <button
                 className={styles.overlay}
                 onClick={() => {

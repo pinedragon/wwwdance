@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import IconSearch from "../../../assets/fi_search.svg";
 export const SearchInput: React.FC = () => {
   return (
     <div className={styles.searchWrapper}>
       <input type="text" className={styles.searchInput}></input>
       <img
-        src={IconSearch}
+        src="/wwwdance/assets/fi_search.svg"
         alt="seach"
         className={styles.searchIcon}
         width={20}

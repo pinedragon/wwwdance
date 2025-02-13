@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 import AboutUs from "./components/AboutUs";
 import Competitions from "./components/Competitions";
+import { Dancewear } from "./components/Dancewear";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/*  <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/competitions" element={<Competitions />} />*/}
+          <Route path="/competitions" element={<Competitions />} />
+          <Route path="/dancewear" element={<Dancewear />} />
         </Routes>
         <Footer />
       </div>

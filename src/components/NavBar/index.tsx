@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import WWWDanceLogo from "../../assets/LogoWWW.svg";
-import Hamburger from "../../assets/fi_menu.svg";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
 import styles from "./styles.module.scss";
 import clsx from "clsx";
@@ -15,12 +13,12 @@ export const NavBar: React.FC = () => {
     <div className={styles.navBar}>
       <div className={styles.navItemHolder}>
         <div className={styles.mainLogoWidth}>
-          <img src={WWWDanceLogo} alt="logo" />
+          <img src="/wwwdance/assets/LogoWWW.svg" alt="logo" />
         </div>
         {screenWidth <= 960 && (
           <button onClick={() => setIsOpen(!isOpen)}>
             <div className={styles.hamburger}>
-              <img src={Hamburger} alt="meni" />
+              <img src="/wwwdance/assets/fi_menu.svg" alt="meni" />
             </div>
           </button>
         )}

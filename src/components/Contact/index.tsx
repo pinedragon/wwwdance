@@ -1,22 +1,17 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import ArrowRight from "../../assets/ArrowRight.png";
-import Telephone from "../../assets/fi_phone.png";
-import Envelope from "../../assets/envelope.png";
+import ArrowTitleHolder from "../shared/ArrowTitleHolder";
 
 export const Contact: React.FC = () => {
   return (
     <div className={styles.contactPageWrapper}>
       <div className={styles.titleContact}>
-        <div>
-          <img src={ArrowRight} alt="arrowRight" />
-        </div>
-        <h1> GET IN TOUCH </h1>
+        <ArrowTitleHolder title="Get in touch" />
       </div>
       <div className={styles.infoHolder}>
         <div className={styles.phone}>
           <div>
-            <img src={Telephone} alt="phone" />
+            <img src="/wwwdance/assets/fi_phone.png" alt="phone" />
           </div>
           <div>
             <p> If you want to get in touch with us, contact us via phone: </p>
@@ -32,7 +27,12 @@ export const Contact: React.FC = () => {
             </p>
           </div>
           <div className={styles.contactButton}>
-            <img src={Envelope} alt="envelope" width={10} height={10} />
+            <img
+              src="/wwwdance/assets/envelope.png"
+              alt="envelope"
+              width={10}
+              height={10}
+            />
             <span>CONTACT US</span>
           </div>
         </div>
