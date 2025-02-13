@@ -1,7 +1,6 @@
 import React from "react";
 
 import { NavLink } from "react-router-dom";
-import Envelope from "../../assets/envelope.png";
 import { footerElement, navItems } from "../../const/global";
 import styles from "./styles.module.scss";
 
@@ -53,7 +52,7 @@ export const Footer: React.FC = () => {
       </div>
       <div className={styles.textWrapper}>
         <div className={styles.emailImage}>
-          <img src={Envelope} alt="mail" />
+          <img src="/wwwdance/assets/envelope.png" alt="mail" />
         </div>
         <div className={styles.emailText}>
           <span>{footerElement.Email}</span>

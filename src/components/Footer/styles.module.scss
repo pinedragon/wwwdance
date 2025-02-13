@@ -28,6 +28,7 @@
   }
 
   @include media(laptops) {
+    margin-top: 10px;
     display: flex;
     gap: 60px;
   }

@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import ArrowRight from "../../assets/ArrowRight.png";
-import DanceMove from "../../assets/aboutusStandingMan.png";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
 import { breakpoints } from "../../const/global";
 
@@ -14,7 +12,7 @@ const AboutUs: React.FC = () => {
     <div className={styles.backgroundImage}>
       <div className={styles.pageTitle}>
         <div className={styles.arrowHolder}>
-          <img src={ArrowRight} alt="arrow" />
+          <img src="/wwwdance/assets/ArrowRight.png" alt="arrow" />
         </div>
         <span className={styles.pageTitleText}>
           Something <span className={styles.pinkText}> About Us</span>...
@@ -33,8 +31,10 @@ const AboutUs: React.FC = () => {
             planned events for them. Dance events are posted for the whole year,
             for all styles and categories. So that we don't just end there, as
             the love and desire are growing, we would like you to find practical{" "}
-            <span className={styles.pinkText}>#dancewear </span>for your sport
-            on this site!
+            <a className={styles.pinkText} href="/wwwdance/dancewear">
+              #dancewear
+            </a>{" "}
+            for your sport on this site!
           </div>
 
           <div className={styles.text}>
@@ -45,7 +45,7 @@ const AboutUs: React.FC = () => {
       </div>
 
       {screenWidth <= breakpoints.laptops && (
-        <img src={DanceMove} alt="danceMove" />
+        <img src="/wwwdance/assets/aboutusStandingMan.png" alt="danceMove" />
       )}
     </div>
   );
