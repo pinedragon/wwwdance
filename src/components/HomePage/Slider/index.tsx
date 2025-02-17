@@ -1,37 +1,27 @@
 import { FC, useEffect, useRef, useState } from "react";
 import cx from "clsx";
-import ArrowRight from "assets/ArrowRight.png";
-import ArrowLeft from "assets/ArrowLeft.png";
-import Ballet from "assets/Ballet.png";
-import JazzDance from "assets/JazzDance.png";
-import HipHop from "assets/HipHop.png";
 
 // import { TextImageHolder } from "../../shared/ImageWithTextHolder";
 import styles from "./styles.module.scss";
 
 const sliderContent = [
   {
-    src: Ballet,
+    src: "/wwwdance/assets/Ballet.png",
     alt: "danceStyle",
     title: "Ballet",
+    text: "Classical ballet is the most traditional and structured form of ballet, characterized by its graceful movements, precise techniques and it requires immense dedication, strength, and flexibility.",
     href: "",
   },
   {
-    src: HipHop,
+    src: "/wwwdance/assets/HipHop.png",
     alt: "danceStyle",
     title: "Hip-Hop",
     href: "",
   },
   {
-    src: JazzDance,
+    src: "/wwwdance/assets/JazzDance.png",
     alt: "danceStyle",
     title: "Jazz Dance",
-    href: "",
-  },
-  {
-    src: HipHop,
-    alt: "danceStyle",
-    title: "Hip-Hop 3",
     href: "",
   },
 ];
@@ -103,20 +93,27 @@ const Slider: FC = () => {
         onClick={prevSlide}
         className={cx(styles.arrowButton, styles.left)}
       >
-        <img src={ArrowLeft} alt="arrow left" />
+        <img src="/wwwdance/assets/ArrowLeftWhite.png" alt="arrow left" />
       </button>
-      <div className={styles.imageHolder} ref={slidesRef}>
-        {sliderContent.map((item, index) => (
-          <div key={item.title + "-" + index} className={styles.slide}>
-            <img src={item.src} alt={`Slide ${index}`} />
-          </div>
-        ))}
+
+      <div className={styles.categoryHolder}>
+        <h1> {sliderContent[0].title}</h1>
+        <p> {sliderContent[0].text} </p>
       </div>
+      <div className={styles.categoryHolder}>
+        <h1> {sliderContent[0].title}</h1>
+        <p> {sliderContent[0].text} </p>
+      </div>
+      <div className={styles.categoryHolder}>
+        <h1> {sliderContent[0].title}</h1>
+        <p> {sliderContent[0].text} </p>
+      </div>
+
       <button
         onClick={nextSlide}
         className={cx(styles.arrowButton, styles.right)}
       >
-        <img src={ArrowRight} alt="arrow right" />
+        <img src="/wwwdance/assets/ArrowRightWhite.png" alt="arrow right" />
       </button>
     </div>
   );

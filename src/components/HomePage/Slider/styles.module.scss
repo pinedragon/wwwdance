@@ -1,8 +1,17 @@
+@use "@styles/module-imports" as *;
 .slideHolder {
   position: relative;
-  max-width: 100%;
+  // max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   margin: 20px auto;
+  // background-color: red;
+  @include media(laptops) {
+    max-width: 1200px;
+    gap: 10px;
+  }
 }
 
 .imageHolder {
@@ -34,6 +43,32 @@
   scrollbar-width: none;
 }
 
+.categoryHolder {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $pink;
+  align-items: center;
+  padding: 10px;
+  h1 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  p {
+    width: 200px;
+  }
+
+  @include media(laptops) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .slide img {
   width: 100%;
   height: auto;
@@ -49,7 +84,7 @@
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 10;
+  // z-index: 10;
 }
 
 .arrowButton.left {
