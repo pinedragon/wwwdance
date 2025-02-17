@@ -41,6 +41,7 @@ export const NavBar: React.FC = () => {
             className={({ isActive }) =>
               isActive ? `${styles.linkItem} ${styles.active}` : styles.linkItem
             }
+            onClick={() => setIsOpen(false)}
           >
             <span className={styles.text}>{navItems.Home}</span>
           </NavLink>
@@ -51,6 +52,7 @@ export const NavBar: React.FC = () => {
             className={({ isActive }) =>
               isActive ? `${styles.linkItem} ${styles.active}` : styles.linkItem
             }
+            onClick={() => setIsOpen(false)}
           >
             <span className={styles.text}>{navItems.AboutUs}</span>
           </NavLink>
@@ -61,6 +63,7 @@ export const NavBar: React.FC = () => {
             className={({ isActive }) =>
               isActive ? `${styles.linkItem} ${styles.active}` : styles.linkItem
             }
+            onClick={() => setIsOpen(false)}
           >
             <span className={styles.text}>{navItems.Competitions}</span>
           </NavLink>
@@ -71,6 +74,7 @@ export const NavBar: React.FC = () => {
             className={({ isActive }) =>
               isActive ? `${styles.linkItem} ${styles.active}` : styles.linkItem
             }
+            onClick={() => setIsOpen(false)}
           >
             <span className={styles.text}>{navItems.DanceWear}</span>
           </NavLink>
@@ -81,6 +85,7 @@ export const NavBar: React.FC = () => {
             className={({ isActive }) =>
               isActive ? `${styles.linkItem} ${styles.active}` : styles.linkItem
             }
+            onClick={() => setIsOpen(false)}
           >
             <span className={styles.text}>{navItems.Contact}</span>
           </NavLink>

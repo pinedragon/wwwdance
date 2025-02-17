@@ -1,7 +1,7 @@
 .overlay {
   display: flex;
   position: fixed;
-  z-index: 2000;
+  z-index: 20;
   top: 0;
   left: 0;
   align-items: center;
@@ -10,6 +10,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
   backdrop-filter: blur(10px);
+
+  &.modal-open {
+    overflow: hidden;
+    height: 100vh;
+  }
 }
 
 /* Centered modal container */
@@ -20,6 +25,7 @@
   padding: 20px;
   background-color: white; /* Fully opaque */
   color: black;
+
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

@@ -2,18 +2,18 @@ import React from "react";
 import styles from "./styles.module.scss";
 import cx from "clsx";
 interface TextImageHolderProsp {
-  position: "up" | "center";
-  label: string;
-  uppercase?: boolean;
+  // position: "up" | "center";
+  // label: string;
+  // uppercase?: boolean;
   margin?: boolean;
   src: string;
   alt: string;
 }
 
 export const TextImageHolder: React.FC<TextImageHolderProsp> = ({
-  position,
-  uppercase,
-  label,
+  // position,
+  // uppercase,
+  // label,
   src,
   alt,
   margin,

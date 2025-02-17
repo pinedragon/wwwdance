@@ -19,10 +19,12 @@
   font-size: 16px;
   color: $pink;
   word-break: keep-all;
+  margin-top: 20px;
 
   @include media(laptops) {
     letter-spacing: 15px;
     font-size: 16px;
+    margin-top: 0px;
   }
 }
 
@@ -65,6 +67,7 @@
 
 .phoneInfo {
   color: $orange-secondary;
+  margin-top: 20px;
 }
 
 .email {
