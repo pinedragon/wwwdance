@@ -47,7 +47,7 @@ button {
 .overlayMenuOpen {
   width: 100%;
   @include media(laptops) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 .overlayMenu {
@@ -80,7 +80,7 @@ button {
 
   border-radius :hover {
     background-color: $pink;
-    margin: 0px 7px;
+    // margin: 0px 7px;
     transition: transform 0.3s ease;
     border: none;
   }
@@ -88,14 +88,13 @@ button {
   @include media(laptops) {
     display: flex;
     height: auto;
-    margin-right: 10px;
+    // margin-right: 5px;
     justify-content: flex-end;
   }
 
   @include media(large-desktops) {
     gap: 5px;
     margin-right: 20px;
-    font-size: 18px;
   }
 }
 

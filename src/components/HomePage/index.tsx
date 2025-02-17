@@ -11,9 +11,9 @@ export const HomePage: React.FC = () => {
       <div className={styles.mainPhoto}>
         <img src="/wwwdance/assets/GirlDancing.png" alt="main-photo" />
       </div>
-      {/* Upcoming event */}
 
-      <ArrowTitleHolder title="Upcoming event" />
+      {/* Upcoming events */}
+      <ArrowTitleHolder title="Upcoming events" />
       <EventByMonth
         events={competitions.map((competition) => {
           return competition.imgSrc;

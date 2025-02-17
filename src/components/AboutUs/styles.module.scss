@@ -18,9 +18,10 @@
 .pageTitle {
   display: flex;
   justify-content: center;
+  gap: 10px;
   flex-direction: row;
   align-items: center;
-  margin: 10px 50px;
+  margin: 10px 30px;
 
   @include media(laptops) {
     margin-top: 100px;
@@ -29,8 +30,12 @@
 }
 
 .arrowHolder {
-  display: flex;
-  flex-direction: row;
+  img {
+    width: 15px;
+    @include media(laptops) {
+      width: 20px;
+    }
+  }
 }
 
 .pageTitleText {
@@ -39,7 +44,6 @@
   flex-wrap: wrap;
   font-size: 20px;
   text-align: center;
-  margin: 0px 10px;
 
   @include media(laptops) {
     font-size: 24px;
