@@ -10,8 +10,8 @@ export const Contact: React.FC = () => {
       </div>
       <div className={styles.infoHolder}>
         <div className={styles.phone}>
-          <div>
-            <img src="/wwwdance/assets/fi_phone.png" alt="phone" />
+          <div className={styles.fiPhone}>
+            <img src="/wwwdance/assets/fi_phone_orange.svg" alt="phone" />
           </div>
           <div>
             <p> If you want to get in touch with us, contact us via phone: </p>

@@ -66,6 +66,13 @@
 
 .pinkText {
   color: $pink;
+  font-size: 16px;
+  font-weight: 600;
+  button {
+    background-color: transparent;
+
+    cursor: pointer;
+  }
 }
 .subTitle {
   color: $pink-secondary;

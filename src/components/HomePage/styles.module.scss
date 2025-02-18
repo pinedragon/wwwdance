@@ -1,5 +1,6 @@
 @use "@styles/module-imports" as *;
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
 .flex {
   display: flex;
   align-items: center;
@@ -17,12 +18,7 @@
   overflow: hidden;
   width: 100%;
   height: 400px;
-  // @include media(tablets) {
-  //   height: 400px;
-  //   width: 100%;
-  // }
-  // width: 300px;
-  // height: 100%;
+
   position: relative;
   @include media(tablets) {
     margin-bottom: 50px;
@@ -57,10 +53,10 @@ video::-webkit-media-controls {
   display: flex;
   flex-direction: row;
 }
-.quote {
+.quoteWrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: $pink;
   padding: 40px 0px;
@@ -68,12 +64,16 @@ video::-webkit-media-controls {
   font-style: italic;
   width: 100%;
   font-size: 16px;
-  letter-spacing: 5px;
 
-  font-weight: 700;
+  .quote {
+    letter-spacing: 5px;
+    font-weight: 600;
+  }
+
   .writer {
-    color: white;
-    font-weight: 100;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
   }
 
   @include media(tablets) {

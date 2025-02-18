@@ -2,9 +2,11 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
 import { breakpoints } from "../../const/global";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs: React.FC = () => {
   const screenWidth = useScreenWidth();
+  const navigate = useNavigate();
 
   console.log("ScreenWidth: ", screenWidth);
 
@@ -31,9 +33,12 @@ const AboutUs: React.FC = () => {
             planned events for them. Dance events are posted for the whole year,
             for all styles and categories. So that we don't just end there, as
             the love and desire are growing, we would like you to find practical{" "}
-            <a className={styles.pinkText} href="/wwwdance/dancewear">
+            <button
+              className={styles.pinkText}
+              onClick={() => navigate("/dancewear")}
+            >
               #dancewear
-            </a>{" "}
+            </button>{" "}
             for your sport on this site!
           </div>
 

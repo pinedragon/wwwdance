@@ -25,12 +25,9 @@ export const HomePage: React.FC = () => {
       />
 
       {/* Quote */}
-      <div className={styles.quote}>
-        <div>
-          <span>"{quote.q1}" </span>
-          <br />
-          <span className={styles.writer}> - {quote.q1w}</span>
-        </div>
+      <div className={styles.quoteWrapper}>
+        <div className={styles.quote}>"{quote.q1}" </div>
+        <div className={styles.writer}> - {quote.q1w}</div>
       </div>
       {/* Image Slider */}
       <Slider />

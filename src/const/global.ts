@@ -18,7 +18,7 @@ export const navItems = {
 export const footerElement = {
   Email: "E-mail: impulsdancestudio@gmail.com",
   Copyrights:
-    "© 2024 Copyright World Wide Dance. All rights reserved. Design by Nastasja Zličić, site made by Maja Milenković",
+    "© 2025 Copyright World Wide Dance. All rights reserved. Design by Nastasja Zličić, site made by Maja Milenković",
 };
 
 export const quote = {
