@@ -10,7 +10,14 @@ export const HomePage: React.FC = () => {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.mainPhoto}>
-        <video autoPlay loop muted controls className={styles.mainVideo}>
+        <video
+          autoPlay
+          loop
+          muted
+          controls
+          playsInline
+          className={styles.mainVideo}
+        >
           <source src="/wwwdance/assets/homepagevideo2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
