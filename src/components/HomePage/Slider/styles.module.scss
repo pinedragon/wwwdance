@@ -49,6 +49,22 @@
     height: 300px;
   }
 }
+.danceCategoryImage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* or absolute if needed, but consistently */
+  margin: 10px 0;
+  width: fit-content;
+  transition: opacity 0.3s;
+}
+
+.danceCategoryImage:hover {
+  opacity: 0;
+  position: absolute;
+}
+
 .textTitle {
   display: flex;
   justify-content: center;
@@ -94,4 +110,14 @@
 
 .arrowButton.right {
   right: 10px;
+}
+
+.pink {
+  background-color: $pink;
+}
+.orange {
+  background-color: $orange;
+}
+.purple {
+  background-color: $purple;
 }
