@@ -55,6 +55,9 @@ export const Footer: React.FC = () => {
           <img src="/wwwdance/assets/envelope.png" alt="mail" />
         </div>
         <div className={styles.emailText}>
+          <div className={styles.envelopeForDesktop}>
+            <img src={"/wwwdance/assets/emailIcon.svg"} alt="Email Icon" />
+          </div>
           <span>{footerElement.Email}</span>
         </div>
         <div className={styles.copyright}>

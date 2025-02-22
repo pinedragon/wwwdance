@@ -21,7 +21,7 @@ export const EventInfo: FC<EventInfoProps> = ({
     <Modal isOpen={isOpen} onCancelClick={onCancelClick}>
       <div className={styles.eventInfo}>
         <div className={styles.title}>{event?.name}</div>
-        {/* <div className={styles.line} /> */}
+
         <img src={event?.imgSrc} alt="event-image" />
         <div className={styles.info}>
           <div className={styles.subTitleWrap}>
@@ -41,7 +41,6 @@ export const EventInfo: FC<EventInfoProps> = ({
             <span>{event?.about}</span>
           </div>
         </div>
-        {/* <div className={styles.line} /> */}
       </div>
     </Modal>
   );
