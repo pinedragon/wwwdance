@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=./index.html">
+  <script>
+    var pathname = window.location.pathname;
+    
+    // Prevent infinite loops by ensuring "/wwwdance" is not added multiple times
+    if (!pathname.startsWith("/wwwdance")) {
+      window.location.replace("/wwwdance" + pathname + window.location.search);
+    }
+  </script>
 </head>
 <body>
-  <script>
-    window.location.replace("/wwwdance" + window.location.pathname + window.location.search);
-  </script>
+  Redirecting...
 </body>
 </html>
