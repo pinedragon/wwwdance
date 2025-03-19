@@ -6,7 +6,7 @@
       "city": "Sremska Mitrovica",
       "address": "PSC 'Pinki'",
       "date": "08. MARCH 2025",
-      "imgSrc": "/wwwdance/assets/UpcomingEventsAssets/2025/March/05032025DanceSirmium.jpg",
+      "imgSrc": "/assets/UpcomingEventsAssets/2025/March/05032025DanceSirmium.jpg",
       "about": "/"
     },
     {
@@ -15,7 +15,7 @@
       "city": "Obrenovac",
       "address": " / ",
       "date": "09. MARCH 2025",
-      "imgSrc": "/wwwdance/assets/UpcomingEventsAssets/2025/March/09032025IdeaDanceFest.jpg",
+      "imgSrc": "/assets/UpcomingEventsAssets/2025/March/09032025IdeaDanceFest.jpg",
       "about": "www.baletidea.co.rs"
     },
     {
@@ -24,7 +24,7 @@
       "city": "Lazarevac",
       "address": "Sportski Centar `Kolubara`",
       "date": "15-16. MARCH 2025",
-      "imgSrc": "/wwwdance/assets/UpcomingEventsAssets/2025/March/15032025PrizePool.jpg",
+      "imgSrc": "/assets/UpcomingEventsAssets/2025/March/15032025PrizePool.jpg",
       "about": "4000eur + more prizes"
     },
     {
@@ -33,7 +33,7 @@
       "city": "Novi Sad",
       "address": "Spens",
       "date": "12. APRIL 2025",
-      "imgSrc": "/wwwdance/assets/UpcomingEventsAssets/2025/April/12042025SpringFest.png",
+      "imgSrc": "/assets/UpcomingEventsAssets/2025/April/12042025SpringFest.png",
       "about": "Novcane nagrade"
     },
     {
@@ -42,7 +42,7 @@
       "city": "Vrbas",
       "address": "Sportski centar 'Drago Jovovic'",
       "date": "17. MAY 2025",
-      "imgSrc": "/wwwdance/assets/UpcomingEventsAssets/2025/May/17052025SpringFestival.png",
+      "imgSrc": "/assets/UpcomingEventsAssets/2025/May/17052025SpringFestival.png",
       "about": "Novcane nagrade dobijaju prva tri mesta. Dobar provod, dobra zabava. Prijavi se i ti i osvoji!"
     }
   ]

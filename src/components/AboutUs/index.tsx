@@ -14,7 +14,7 @@ const AboutUs: React.FC = () => {
     <div className={styles.backgroundImage}>
       <div className={styles.pageTitle}>
         <div className={styles.arrowHolder}>
-          <img src="/wwwdance/assets/ArrowRight.png" alt="arrow" />
+          <img src="/assets/ArrowRight.png" alt="arrow" />
         </div>
         <span className={styles.pageTitleText}>
           Something <span className={styles.pinkText}> About Us</span>...
@@ -50,7 +50,7 @@ const AboutUs: React.FC = () => {
       </div>
 
       {screenWidth <= breakpoints.laptops && (
-        <img src="/wwwdance/assets/aboutusStandingMan.png" alt="danceMove" />
+        <img src="/assets/aboutusStandingMan.png" alt="danceMove" />
       )}
     </div>
   );

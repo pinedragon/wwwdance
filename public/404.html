@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    var pathname = window.location.pathname;
+    
+    // Prevent infinite loops by ensuring "/wwwdance" is not added multiple times
+    if (!pathname.startsWith("/wwwdance")) {
+      window.location.replace("/wwwdance" + pathname + window.location.search);
+    }
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>

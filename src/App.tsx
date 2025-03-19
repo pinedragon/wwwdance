@@ -1,3 +1,4 @@
+
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./styles/app.scss";
 import "./index.css";
@@ -13,7 +14,7 @@ import { Dancewear } from "./components/Dancewear";
 
 function App() {
   return (
-    <Router basename="/wwwdance">
+    <Router basename="/">
       <div className="parent">
         <NavBar />
         <Routes>
